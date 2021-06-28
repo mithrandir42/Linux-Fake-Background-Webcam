@@ -189,7 +189,12 @@ The files that you might want to replace are the followings:
   - ``foreground.jpg`` - the foreground image
   - ``foreground-mask.jpg`` - the foreground image mask
 
-You can pause the background replacement process, and trigger the fake webcam
+After launching the program, the program goes into "paused" mode, which outputs
+a black image at 1 FPS. When you connect your program to the virtual webcam,
+the background replacement process resumes. This reduces the CPU usage while you
+are not actively using the fake webcam.
+
+You can manually pause the background replacement process, and trigger the fake webcam
 to output a black image at 1 FPS by pressing ``CTRL-C``. This reduces the CPU
 usage while you are not using the fake webcam. You can unpause by pressing
 ``CTRL-C`` again. This also reload the files listed above. This allows you to
